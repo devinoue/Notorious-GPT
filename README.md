@@ -1,4 +1,4 @@
-# gpt-2-rap
+# Notorious-GPT
 # Overview
 
 Generating rap lyrics with Deep Learning
