@@ -1,2 +1,12 @@
-# Notorious-GPT
+# gpt-2-rap
+# Overview
+
 Generating rap lyrics with Deep Learning
+
+# LICENCE
+
+Source : [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+Lyrics : [[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)] from [380,000+ lyrics from MetroLyrics](https://www.kaggle.com/gyani95/380000-lyrics-from-metrolyrics)
+
+
+
