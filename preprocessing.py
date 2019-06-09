@@ -1,37 +1,7 @@
 import re
 import pandas as pd
 
-
-df = pd.read_csv("lyrics.csv")
-
-df_hiphop = df.loc[df['genre'] == "Hip-Hop"]
-
-# 歌詞が欠損している場合は削除
-df_hiphop = df_hiphop.dropna(subset=['lyrics'])
-
-
-# 不要な要素の置き換え
-df_hiphop['lyrics'] = df_hiphop['lyrics'].replace('\[[^]]+\]', '', regex=True)
-df_hiphop['lyrics'] = df_hiphop['lyrics'].replace('\([^)]+\)', '', regex=True)
-df_hiphop['lyrics'] = df_hiphop['lyrics'].replace('\{[^}]+\}', '', regex=True)
-df_hiphop['lyrics'] = df_hiphop['lyrics'].replace('[+]+', '', regex=True)
-df_hiphop['lyrics'] = df_hiphop['lyrics'].replace('[. ]{2,}', '', regex=True)
-df_hiphop['lyrics'] = df_hiphop['lyrics'].replace('(VERSE|Verse|verse)+[ ]*\d', '', regex=True)
-
-drop_germany = df_hiphop.index[df_hiphop['lyrics'].str.contains("ich") == True]
-df_hiphop = df_hiphop.drop(drop_germany)
-drop_french = df_hiphop.index[df_hiphop['lyrics'].str.contains("suis") == True]
-df_hiphop = df_hiphop.drop(drop_french)
-drop_spanish = df_hiphop.index[df_hiphop['lyrics'].str.contains(" que ") == True]
-df_hiphop = df_hiphop.drop(drop_spanish)
-
-drop_other = df_hiphop.index[df_hiphop['lyrics'].str.contains(" je ") == True]
-df_hiphop = df_hiphop.drop(drop_other)
-drop_other = df_hiphop.index[df_hiphop['lyrics'].str.contains(" ca ") == True]
-df_hiphop = df_hiphop.drop(drop_other)
-
-
-
+df_hiphop = pd.read_csv("hiphop_lyrics.csv")
 
 arr=[]
 
