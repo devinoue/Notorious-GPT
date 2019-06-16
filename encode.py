@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Usage:
+# Usage: 
 #  PYTHONPATH=src ./encode.py <file|directory|glob> /path/to/output.npz
 #  PYTHONPATH=src ./train --dataset /path/to/output.npz
 

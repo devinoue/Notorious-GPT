@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 
 # Usage:
 #  PYTHONPATH=src ./train --dataset <file|directory|glob>
 
