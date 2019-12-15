@@ -1,7 +1,7 @@
 # Notorious-GPT
 # Overview
 
-Generating rap lyrics with Deep Learning
+Generating rap lyrics with Deep Learning💪😎
 Oroginal: [nshepperd/gpt-2](https://github.com/nshepperd/gpt-2)
 # LICENCE
 
